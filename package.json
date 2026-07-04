@@ -1,0 +1,42 @@
+{
+  "name": "github-pr-auto-fix-review-ai",
+  "version": "1.0.0",
+  "description": "Production-ready GitHub App for automatic PR analysis, review, and auto-fix",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": ["github", "ai", "code-review", "auto-fix"],
+  "author": "ShinnosukeMoriFukuokaJP",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "bullmq": "^5.0.0",
+    "ioredis": "^5.3.2",
+    "openai": "^4.28.0",
+    "crypto-js": "^4.2.0",
+    "pino": "^8.16.2",
+    "pino-pretty": "^10.2.3",
+    "uuid": "^9.0.1",
+    "@octokit/auth-app": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "@types/jest": "^29.5.11",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  }
+}
